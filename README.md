@@ -1,2 +1,4 @@
 # tumblr--demo
-tumblr demo projesi
+---> git clone
+---> npm install
+---> npm start
