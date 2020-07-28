@@ -18,19 +18,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  /* justify-content: center; */
-  /* color: white; */
 }
 
 .App-link {
   color: #61dafb;
 }
 
+div {
+  font-family: Helvetica
+}
+
 .Logo {
   font-size: 4em;
   font-weight: bold;
   color: #444;
+  margin-bottom: 20px;
+}
+
+.count {
+  position: absolute;
+  margin-top: 110px
 }
 
 .column {
@@ -38,28 +45,38 @@
   flex-direction: column;
 }
 
-/* Clear floats after the columns */
 .row {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  width: 700px;
+  border-bottom: solid 1px black;
+  margin-bottom: 40px;
+
 }
 .data {
   position: relative;
   margin-bottom: 50px;
-  /* padding-right: 20px; */
+  width: 400px;
 }
 .date {
   position: absolute;
   left: -260px;
   text-align: right;
   width: 230px;
-  /* white-space: nowrap; */
-  /* font: normal 34px Helvetica, sans-serif; */
   font-size: 2em;
-  /* letter-spacing: -2px; */
   color: #ccc;
   text-transform: uppercase;
-  /* line-height: 35px; */
+}
+
+.description {
+  position: absolute;
+  left: 420px;
+  top: -20px;
+  text-align: end;
+  width: 140px;
+  font-size: 1em;
+  color:gray;
 }
 .date2 {
   float: right;
@@ -73,28 +90,23 @@
   margin-left: 10px;
   padding-top: 5px;
   letter-spacing: 0px;
-  /* overflow: hidden; */
 }
 
 .quote {
   color: #888;
-  width: 400px;
 }
 
 .quoteText {
   font-size: 2em;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .link {
   color:black
 }
-.photo {
-  width: 400px;
-}
 
 .linkPost {
-  width: 400px;
+  color: #00c;
 }
 
 .linkText {
@@ -129,6 +141,22 @@
   font-weight: 600;
   margin-left: 10px;
 }
+
+ .audioArtist {
+   text-decoration: underline;
+   font-weight: 500;
+   margin-right: 5px;
+ }
+
+ .audioTitle {
+  font-weight: 500;
+ }
+
+ .regularTitle {
+   font-weight: 600;
+   color:#6498cc;
+   font-size: 14pt;
+ }
 
 @keyframes App-logo-spin {
   from {
